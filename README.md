@@ -166,10 +166,10 @@ kill -9 <PID>
 |---|---|
 | Tipo de incidente | Binário SUID suspeito fora de diretório padrão |
 | Localização | `/tmp/` ou diretório atípico |
-| Proprietário | root |
-| Processo ativo | Sim / Não |
-| Conexões de rede | Sim / Não |
-| Hash SHA256 | `[hash gerado]` |
+| Proprietário | root | root
+| Processo ativo | Sim / Não | Não
+| Conexões de rede | Não identificadas | 
+| Hash SHA256 | `0148f5ab3062a905281d8deb9645363da5131011c9e7b6dcaa38b504e41b68ea` |
 | Resultado VirusTotal | Limpo / Detectado / Não encontrado |
 | Ação tomada | `chmod -s` aplicado, processo encerrado, log preservado |
 | Escalonamento | Sim / Não |
