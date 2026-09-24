@@ -3,6 +3,8 @@
 Laboratório prático de fundamentos Linux com foco em investigação forense e análise de segurança.  
 Todos os exercícios foram realizados em ambiente real via **WSL (Ubuntu)**, simulando cenários de triagem SOC.
 
+> **Nota de transparência:** os cenários de investigação foram simulados em ambiente controlado (WSL / laboratório pessoal) como prática da trilha de estudos para SOC Analyst Júnior — não são incidentes reais de produção. O objetivo é demonstrar raciocínio investigativo aplicado, não relatar eventos reais.
+
 ---
 
 ## 📂 Estrutura do repositório
