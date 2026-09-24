@@ -10,14 +10,10 @@ Todos os exercícios foram realizados em ambiente real via **WSL (Ubuntu)**, sim
 ```
 linux-fundamentals-soc/
 ├── 01-permissions/
-│   ├── README.md
-│   ├── investigation-suid.md
-│   └── incident-report-suid.md
+│   └── investigation-suid.md
 ├── 02-processes/
-│   ├── README.md
-│   └── process-investigation.md
+│   └── investigation-process.md
 ├── reference/
-│   └── soc-cheatsheet.pdf
 └── README.md
 ```
 
@@ -157,7 +153,7 @@ kill -9 <PID>
 
 ### 📋 Relatório de Incidente
 
-**Data:** 01/06/2026 
+**Data:** 07/06/2026 
 **Analista:** Natan Almeida  
 **Severidade:** Alta  
 **Status:** Contido
