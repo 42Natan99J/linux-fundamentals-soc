@@ -18,7 +18,7 @@ evento que "aparece demais" para ser normal.
 |---|---|
 | v1 | Script fixo — caminho do arquivo escrito direto no código |
 | v2 | Parametrizado — recebe o arquivo via `$1`, com validação `-f` |
-| v3 | Lógica extraída para função (`verificar_item`), com `local` |
+| v3 | Lógica extraída para função (`contar_ocorrencia`), com `local` |
 | v4 | Validação de entrada explícita (`-z "$1"`, mensagem de uso, `exit`) |
 | v5 | Termos extraídos dinamicamente para um **array**, iterados via `for` |
 
@@ -37,21 +37,15 @@ Exemplo de saída:
 ```
 === Investigacao de: acessos.txt ===
 
---- Ranking geral ---
-      3 root
-      2 admin
-      1 guest
-
 --- Verificacao individual ---
-Total de termos unicos: 3
+Total de termos unicos encontrados: 2
 
-root: SUSPEITO (3 ocorrencias)
-admin: normal (2 ocorrencias)
-guest: normal (1 ocorrencias)
+conexao: SUSPEITO (4 ocorrencias)
+login: SUSPEITO (3 ocorrencias)
 ```
 ## Conceitos aplicados
 
-- Pipelines (`cut`, `sort`, `uniq -c`, `grep -c`)
+- Pipelines (`cut`, `sort -u`, `grep -c`)
 - Funções com escopo local (`local`)
 - Arrays (`TERMOS=(...)`, `${TERMOS[@]}`, `${#TERMOS[@]}`)
 - Validação de entrada e código de saída (`exit 0` / `exit 1`)
